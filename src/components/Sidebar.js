@@ -2,6 +2,8 @@ import React, { useState } from 'react';
 import { FaLinkedin, FaGithub } from 'react-icons/fa';
 
 const Sidebar = () => {
+  console.log(new URL('about-tamtran/assets/images/avatar.png', document.baseURI).href); // This will log the absolute URL to the console
+
   const [activeLink, setActiveLink] = useState('');
 
   const handleMouseEnter = linkName => setActiveLink(linkName);
@@ -10,6 +12,7 @@ const Sidebar = () => {
   const links = ['About', 'My Resume', 'Projects', 'Contact', 'Blog'];
 
   return React.createElement(
+
     'div',
     {
       className: 'w-64 h-screen bg-black text-white flex flex-col justify-between p-5' // Ensures proper spacing
@@ -22,11 +25,12 @@ const Sidebar = () => {
       React.createElement(
         'img',
         {
-          src: '/assets/images/avatar.png', // Absolute path from public folder
+          src: 'about-tamtran/assets/images/avatar.png', // Absolute path from public folder
           alt: 'Avatar',
           className: 'w-25 h-25' // Avatar styling
         }
-      )
+      ),
+      
     ),
     React.createElement(
       'div', // Wrapper for navigation links
@@ -38,14 +42,14 @@ const Sidebar = () => {
           index === 0 // Add an extra line above "About"
             ? React.createElement('hr', { className: 'w-full border-gray-700 mb-3' }) // Extra line above "About"
             : null,
-          React.createElement(
-            'a',
-            {
-              href: `#${link.toLowerCase().replace(/\s+/g, '-')}`,
-              className: 'block text-center text-xl hover:text-green-400 transition duration-300' // Centers text horizontally
-            },
-            link
-          ),
+            React.createElement(
+                'a',
+                {
+                  href: `#${link.toLowerCase().replace(/\s+/g, '-')}`,
+                  className: `block text-center text-xl ${activeLink === link ? 'text-green-400' : 'hover:text-green-400'} transition duration-300` // Applies green color dynamically if active
+                },
+                link
+              ),
           React.createElement('hr', { className: 'mt-3 border-gray-700' }) // Line below each link
         )
       )
