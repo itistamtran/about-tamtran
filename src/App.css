@@ -36,3 +36,25 @@
     transform: rotate(360deg);
   }
 }
+
+:root {
+  --dark-gray: #1b1a1ae7; /* Replace this with your preferred dark grey color */
+  --text-color: #ffffff; /* White text for contrast */
+}
+
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  background-color: var(--dark-gray);
+  color: var(--text-color);
+}
+
+.bg-dark-gray {
+  background-color: var(--dark-gray);
+}
+
+.text-white {
+  color: var(--text-color);
+}
+
+

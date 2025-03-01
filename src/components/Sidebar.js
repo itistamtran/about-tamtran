@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 import { FaLinkedin, FaGithub } from 'react-icons/fa';
+import { Link } from 'react-router-dom';
+
 
 const Sidebar = () => {
   console.log(new URL('about-tamtran/assets/images/avatar.png', document.baseURI).href); // This will log the absolute URL to the console
@@ -9,7 +11,13 @@ const Sidebar = () => {
   const handleMouseEnter = linkName => setActiveLink(linkName);
   const handleMouseLeave = () => setActiveLink('');
 
-  const links = ['About', 'My Resume', 'Projects', 'Contact', 'Blog'];
+  const links = [
+    { name: 'About', path: '/' },
+    { name: 'My Resume', path: '/my-resume' },
+    { name: 'Projects', path: '/projects' },
+    { name: 'Contact', path: '/contact' },
+    { name: 'Blog', path: '/blog' }
+  ];
 
   return React.createElement(
 
@@ -34,23 +42,22 @@ const Sidebar = () => {
     ),
     React.createElement(
       'div', // Wrapper for navigation links
-      { className: 'flex flex-col justify-top h-full space-y-3 pt-8' }, // Adjusted spacing for uniformity
-      links.map((link, index) =>
+      { className: 'flex flex-col justify-top h-full space-y-6 pt-10' },
+      links.map(link =>
         React.createElement(
-          'div', // Container div for link and underline
-          { key: link },
-          index === 0 // Add an extra line above "About"
-            ? React.createElement('hr', { className: 'w-full border-gray-700 mb-3' }) // Extra line above "About"
-            : null,
-            React.createElement(
-                'a',
-                {
-                  href: `#${link.toLowerCase().replace(/\s+/g, '-')}`,
-                  className: `block text-center text-xl ${activeLink === link ? 'text-green-400' : 'hover:text-green-400'} transition duration-300` // Applies green color dynamically if active
-                },
-                link
-              ),
-          React.createElement('hr', { className: 'mt-3 border-gray-700' }) // Line below each link
+          'div',
+          { key: link.name },
+          React.createElement(
+            Link,
+            {
+              to: link.path,
+              className: 'block text-center text-xl hover:text-green-400',
+              onMouseEnter: () => handleMouseEnter(link.name),
+              onMouseLeave: handleMouseLeave
+            },
+            link.name
+          ),
+          React.createElement('hr', { className: 'mt-2 border-gray-700' })
         )
       )
     ),
