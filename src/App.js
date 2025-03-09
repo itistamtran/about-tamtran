@@ -1,4 +1,3 @@
-"use client";
 import React, { useEffect } from 'react';
 import { BrowserRouter as Router, Routes, Route, useNavigate } from 'react-router-dom'; // Consolidate imports
 import Sidebar from './components/Sidebar';

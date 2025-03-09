@@ -1,4 +1,3 @@
-"use client";
 import React from 'react';
 import { Container, Typography,  Grid } from '@mui/material';
 import { createTheme, ThemeProvider } from '@mui/material/styles';

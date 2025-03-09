@@ -1,5 +1,3 @@
-"use client";
-
 import React, { useState } from 'react';
 import { FaLinkedin, FaGithub } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
