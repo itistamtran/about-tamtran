@@ -7,7 +7,7 @@ import { Link } from 'react-router-dom'; // Import Link
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowLeft } from '@fortawesome/free-solid-svg-icons';
 
-import Footer from '../../components/Footer';
+//import Footer from '../../components/Footer';
 
 const theme = createTheme({
   components: {
@@ -23,7 +23,7 @@ const theme = createTheme({
     }
   }
 });
-
+{/* 
 const StyledButton = styled(Button)({
   backgroundColor: '#4ADE80 !important',  
   '&:hover': {
@@ -38,6 +38,8 @@ const RightAlignedContainer = styled.div`
   display: flex;
   justify-content: flex-end;
 `;
+
+*/}
 
 const StyledLink = styled(Link)`
   text-decoration: none;
