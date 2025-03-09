@@ -9,7 +9,11 @@
       }
     ],
     "routes": [
-      { "src": "/manifest.json", "dest": "/public/manifest.json" }
+      { "src": "/manifest.json", "dest": "/manifest.json" },
+      { "src": "/favicon.ico", "dest": "/favicon.ico" }
+    ],
+    "rewrites": [
+      { "source": "/(.*)", "destination": "/index.html" }
     ]
   }
   
