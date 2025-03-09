@@ -2,7 +2,6 @@
   "name": "about-tamtran",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://itistamtran.github.io/about-tamtran",
   "dependencies": {
     "@emotion/react": "^11.14.0",
     "@emotion/styled": "^11.14.0",
