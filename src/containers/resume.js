@@ -155,7 +155,6 @@ const Resume = () => {
         
             <div style={{
                 backgroundColor: 'transparent', 
-                color: '#ffffff',
                 padding: '20px',
                 borderRadius: '8px',
                 margin: '10px 0',
