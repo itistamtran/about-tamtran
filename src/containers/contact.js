@@ -1,3 +1,4 @@
+"use client";
 import { useState } from "react";
 import emailjs from "emailjs-com";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";

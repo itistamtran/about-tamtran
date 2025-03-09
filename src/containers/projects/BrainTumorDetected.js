@@ -1,5 +1,6 @@
+"use client";
 import React from 'react';
-import { Container, Paper, Typography, Button, Grid } from '@mui/material';
+import { Container, Typography, Button, Grid } from '@mui/material';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
 import styled from 'styled-components';
 import { Link } from 'react-router-dom'; // Import Link

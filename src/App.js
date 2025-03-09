@@ -1,4 +1,5 @@
-import React from 'react';
+"use client";
+import React, { useEffect } from 'react';
 import { BrowserRouter as Router, Routes, Route, useNavigate } from 'react-router-dom'; // Consolidate imports
 import Sidebar from './components/Sidebar';
 import Projects from './containers/projects';
@@ -14,6 +15,9 @@ import './App.css';
 // Define the About component
 const About = () => {
   const navigate = useNavigate();
+  useEffect(() => {
+    document.title = "About Tam Tran"; 
+  }, []);
   return (
     <div className="flex-1 p-6 text-white sm:p-8 md:p-10 bg-dark-gray">
       <h1 className="mt-10 text-5xl font-bold sm:text-7xl md:text-9xl">Hi,</h1>
@@ -33,7 +37,7 @@ const About = () => {
 
 const App = () => {
   return (
-    <Router basename="/about-tamtran">
+    <Router>
       <div className="flex min-h-screen bg-dark-gray"> {/* Apply consistent background */}
         <Routes>
           <Route path="/" element={<div className="flex flex-1"><Sidebar /><About /></div>}/>
