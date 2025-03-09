@@ -7,8 +7,8 @@ import { Link } from 'react-router-dom';
 const Sidebar = () => {
   console.log(new URL('about-tamtran/assets/images/avatar.png', document.baseURI).href); // This will log the absolute URL to the console
 
-  const [activeLink, setActiveLink] = useState('');
-
+  const [setActiveLink] = useState('');
+  
   const handleMouseEnter = linkName => setActiveLink(linkName);
   const handleMouseLeave = () => setActiveLink('');
 

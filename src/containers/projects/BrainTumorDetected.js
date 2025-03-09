@@ -1,6 +1,6 @@
 "use client";
 import React from 'react';
-import { Container, Typography, Button, Grid } from '@mui/material';
+import { Container, Typography, Grid } from '@mui/material';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
 import styled from 'styled-components';
 import { Link } from 'react-router-dom'; // Import Link
@@ -23,7 +23,7 @@ const theme = createTheme({
     }
   }
 });
-{/* 
+/* 
 const StyledButton = styled(Button)({
   backgroundColor: '#4ADE80 !important',  
   '&:hover': {
@@ -39,7 +39,7 @@ const RightAlignedContainer = styled.div`
   justify-content: flex-end;
 `;
 
-*/}
+*/
 
 const StyledLink = styled(Link)`
   text-decoration: none;
