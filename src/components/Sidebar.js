@@ -16,7 +16,7 @@ const Sidebar = () => {
     { name: 'My Resume', path: '/my-resume' },
     { name: 'Projects', path: '/projects' },
     { name: 'Contact', path: '/contact' },
-    { name: 'Blog', path: '/blog' }
+    { name: 'ForSale', path: '/onsale' }
   ];
 
   return React.createElement(
@@ -33,7 +33,7 @@ const Sidebar = () => {
       React.createElement(
         'img',
         {
-          src: 'about-tamtran/assets/images/avatar.png', // Absolute path from public folder
+          src: process.env.PUBLIC_URL + '/assets/images/avatar.png', // Absolute path from public folder
           alt: 'Avatar',
           className: 'w-25 h-25' // Avatar styling
         }
@@ -80,7 +80,21 @@ const Sidebar = () => {
         },
         React.createElement(FaGithub, { className: 'h-6 w-6' }) // GitHub icon
       )
-    )
+    ),
+    React.createElement(
+      'div', 
+      { className: 'text-sm text-gray-300 text-center mt-2' },
+      React.createElement(
+        'p',
+        null,
+        '© 2025 Tam Tran.'
+      ),
+      React.createElement(
+        'p',
+        null,
+        'All rights reserved.'
+      )
+    )  
   );
 };
 
