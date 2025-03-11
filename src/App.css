@@ -38,8 +38,8 @@
 }
 
 :root {
-  --dark-gray: #1b1a1ae7; /* Replace this with your preferred dark grey color */
-  --text-color: #ffffff; /* White text for contrast */
+  --dark-gray: #1b1a1ae7; 
+  --text-color: #ffffff; 
 }
 
 body {
