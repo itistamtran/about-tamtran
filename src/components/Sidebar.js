@@ -22,7 +22,7 @@ const Sidebar = () => {
 
     'div',
     {
-      className: 'w-64 h-screen bg-black text-white flex flex-col justify-between p-5' // Ensures proper spacing
+      className: 'w-64 bg-black text-white flex flex-col justify-between p-5' // Ensures proper spacing
     },
     React.createElement(
       'div', // Avatar container
