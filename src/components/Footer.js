@@ -1,7 +1,7 @@
-import React from 'react';
-import { Typography, Box } from '@mui/material';
-import { Link } from 'react-router-dom';
-import styled from 'styled-components';
+import React from "react";
+import { Typography, Box } from "@mui/material";
+import { Link } from "react-router-dom";
+import styled from "styled-components";
 
 const FooterContainer = styled(Box)`
   display: flex;
@@ -17,19 +17,17 @@ const StyledLink = styled(Link)`
   color: white;
   font-weight: bold;
   &:hover {
-    color: #4ADE80; 
+    color: #4ade80;
   }
 `;
 
 const Footer = () => {
   return (
     <FooterContainer>
-      <Typography variant="body2" style={{ color: 'white' }}>
-        © 2025 Tam Tran. All rights reserved.
+      <Typography variant="body2" style={{ color: "white" }}>
+        © {new Date().getFullYear()} Tam Tran. All rights reserved.
       </Typography>
-      <StyledLink to="/">
-        Home
-      </StyledLink>
+      <StyledLink to="/">Home</StyledLink>
     </FooterContainer>
   );
 };
