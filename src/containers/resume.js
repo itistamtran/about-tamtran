@@ -218,7 +218,7 @@ const Resume = () => {
               textAlign: "right",
             }}
           >
-            Expected December 2025
+            December 2025
           </p>
 
           <h4
@@ -507,51 +507,6 @@ const Resume = () => {
               <span style={{ marginRight: "10px" }}>&#9679;</span>Social Media
               and Marketing: Developed content and marketing materials for the
               department’s social media platforms.
-            </li>
-          </ul>
-
-          <h4 style={{ color: "white", fontWeight: "bold", marginTop: "10px" }}>
-            VietmediaTV
-          </h4>
-          <h4 style={{ color: "white", fontStyle: "italic" }}>
-            Video, News Editor and Graphic Designer
-          </h4>
-          <p
-            style={{
-              marginTop: "-3.3rem",
-              marginRight: "35px",
-              textAlign: "right",
-            }}
-          >
-            Garden Grove, CA
-          </p>
-          <p
-            style={{
-              marginBottom: "0rem",
-              marginRight: "35px",
-              textAlign: "right",
-            }}
-          >
-            {" "}
-            May 2019 - Present
-          </p>
-          <ul className="mt-2 space-y-1">
-            <li>
-              <span style={{ marginRight: "10px" }}>&#9679;</span>Edit News for
-              Anchors: Translate news from English to Vietnamese and edit the
-              content to ensure accuracy and clarity, providing news anchors
-              with well-prepared scripts for smooth and professional delivery.
-            </li>
-            <li>
-              <span style={{ marginRight: "10px" }}>&#9679;</span>Edit Videos
-              and Write Captions for Social Media: Edit videos and craft
-              engaging captions for social media platforms like Facebook and
-              YouTube, enhancing the content's reach and impact.
-            </li>
-            <li>
-              <span style={{ marginRight: "10px" }}>&#9679;</span>Develop
-              creative advertising content for media including flyers, logos,
-              and posters.
             </li>
           </ul>
         </div>
